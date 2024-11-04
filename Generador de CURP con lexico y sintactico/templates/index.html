@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de CURP</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Generador de CURP</h1>
+        <form action="/generar-curp" method="POST">
+            <label for="apellido1">Apellido Paterno:</label>
+            <input type="text" id="apellido1" name="apellido1" required placeholder="Ingrese su apellido paterno">
+            
+            <label for="apellido2">Apellido Materno:</label>
+            <input type="text" id="apellido2" name="apellido2" required placeholder="Ingrese su apellido materno">
+            
+            <label for="nombre">Nombre(s):</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Ingrese su nombre(s)">
+            
+            <label for="anio">Año de Nacimiento:</label>
+            <input type="text" id="anio" name="anio" maxlength="4" pattern="\d{4}" required placeholder="Ej: 1998">
+
+            <label for="mes">Mes de Nacimiento:</label>
+            <select id="mes" name="mes" required>
+                <option value="">Seleccione un mes</option>
+                <option value="01">Enero</option>
+                <option value="02">Febrero</option>
+                <option value="03">Marzo</option>
+                <option value="04">Abril</option>
+                <option value="05">Mayo</option>
+                <option value="06">Junio</option>
+                <option value="07">Julio</option>
+                <option value="08">Agosto</option>
+                <option value="09">Septiembre</option>
+                <option value="10">Octubre</option>
+                <option value="11">Noviembre</option>
+                <option value="12">Diciembre</option>
+            </select>
+            
+            <label for="dia">Día de Nacimiento:</label>
+            <input type="text" id="dia" name="dia" maxlength="2" pattern="\d{2}" required placeholder="Ej: 01">
+            
+            <label for="sexo">Sexo:</label>
+            <select id="sexo" name="sexo" required>
+                <option value="">Seleccione su sexo</option>
+                <option value="H">Hombre</option>
+                <option value="M">Mujer</option>
+            </select>
+            
+            <label for="estado">Estado de Nacimiento:</label>
+            <select id="estado" name="estado" required>
+                <option value="">Seleccione su estado</option>
+                <option value="AS">Aguascalientes</option>
+                <option value="BC">Baja California</option>
+                <option value="BS">Baja California Sur</option>
+                <option value="CC">Campeche</option>
+                <option value="CS">Chiapas</option>
+                <option value="CM">Chihuahua</option>
+                <option value="CS">Coahuila</option>
+                <option value="CH">Colima</option>
+                <option value="DF">Ciudad de México</option>
+                <option value="DG">Durango</option>
+                <option value="GT">Guanajuato</option>
+                <option value="GR">Guerrero</option>
+                <option value="HG">Hidalgo</option>
+                <option value="JC">Jalisco</option>
+                <option value="MC">Mexico</option>
+                <option value="MN">Michoacán</option>
+                <option value="MS">Morelos</option>
+                <option value="NT">Nayarit</option>
+                <option value="NL">Nuevo León</option>
+                <option value="OC">Oaxaca</option>
+                <option value="PL">Puebla</option>
+                <option value="QT">Querétaro</option>
+                <option value="QR">Quintana Roo</option>
+                <option value="SP">San Luis Potosí</option>
+                <option value="SL">Sinaloa</option>
+                <option value="SR">Sonora</option>
+                <option value="TC">Tabasco</option>
+                <option value="TS">Tamaulipas</option>
+                <option value="TL">Tlaxcala</option>
+                <option value="VZ">Veracruz</option>
+                <option value="YN">Yucatán</option>
+                <option value="ZS">Zacatecas</option>
+            </select>
+            
+            <button type="submit">Generar CURP</button>
+        </form>
+    </div>
+</body>
+</html>

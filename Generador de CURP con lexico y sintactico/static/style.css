@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e9ecef 0%, #f2f2f2 100%); /* Fondo degradado suave y neutro */
+}
+
+.container {
+    background: #ffffff; /* Fondo blanco para el contenedor */
+    border-radius: 20px; /* Esquinas redondeadas */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra más suave */
+    padding: 40px; /* Espaciado interno */
+    width: 100%;
+    max-width: 500px; /* Ancho máximo */
+    position: relative; /* Posicionamiento relativo para efectos */
+    overflow: hidden; /* Ocultar desbordamiento */
+}
+
+h1 {
+    font-size: 30px; /* Título grande */
+    margin-bottom: 30px; /* Espacio inferior */
+    color: #333333; /* Color de texto oscuro */
+    text-align: center; /* Centrar texto */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 16px; /* Tamaño de fuente */
+    color: #555555; /* Color de texto suave */
+    margin-top: 15px; /* Espacio superior */
+}
+
+input, select {
+    padding: 15px; /* Espaciado interno */
+    border-radius: 10px; /* Esquinas redondeadas */
+    border: 1px solid #ddd; /* Borde suave */
+    font-size: 16px; /* Tamaño de fuente */
+    margin-top: 5px; /* Espacio entre elementos */
+}
+
+input:focus, select:focus {
+    border-color: #4a90e2; /* Color al enfocar */
+    outline: none; /* Sin borde externo */
+}
+
+button {
+    margin-top: 20px; /* Espacio superior */
+    background-color: #4a90e2; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cursor de mano */
+    font-size: 18px; /* Tamaño de fuente */
+    padding: 15px; /* Espaciado interno */
+    border-radius: 10px; /* Esquinas redondeadas */
+    display: block; /* Hace que el botón ocupe el ancho completo */
+    margin: 20px auto 0; /* Centra el botón */
+}
+
+.result {
+    margin-top: 30px; /* Espacio superior */
+    font-size: 20px; /* Tamaño de fuente más grande */
+    color: #333333; /* Color de texto oscuro */
+}
+
+.curp-result {
+    font-size: 24px; /* Tamaño de fuente del resultado */
+    color: #4a90e2; /* Color del resultado */
+    font-weight: bold; /* Negrita */
+    margin-top: 15px; /* Espacio superior */
+    padding: 10px; /* Espaciado interno */
+    background-color: #ffffff; /* Color de fondo del resultado */
+    border-radius: 10px; /* Esquinas redondeadas */
+    text-align: center; /* Centrar el texto */
+    white-space: nowrap; /* Evitar que la CURP se divida en múltiples líneas */
+}
+
+
+.back-link {
+    display: block; /* Permite centrar el enlace */
+    margin: 25px auto 0; /* Espacio superior y centrar */
+    text-decoration: none; /* Sin subrayado */
+    color: #ffffff; /* Color del texto */
+    font-size: 16px; /* Tamaño de fuente */
+    padding: 10px 20px; /* Espaciado interno */
+    background-color: #007bff; /* Color de fondo */
+    border-radius: 8px; /* Esquinas redondeadas */
+    border: 2px solid #0056b3; /* Borde más oscuro */
+    text-align: center; /* Centrar texto */
+}
