@@ -113,6 +113,7 @@ def generar_curp():
         obtener_primera_consonante_interna(apellido2) +  
         obtener_primera_consonante_interna(nombre) +      
         "{:02d}".format(random.randint(0, 99))  
+        #"{:02d}".format(5)
     )
 
     return render_template('resultado_curp.html', mensaje=curp)  
